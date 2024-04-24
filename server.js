@@ -25,7 +25,7 @@ mongoose
 
 // app.use("/auth", require("./models/user.js"));
 // ... other app.use middleware
-app.use(express.static(path.join(__dirname, "client", "build")))
+app.use(express.static(path.join(__dirname, "client", "dist")))
 
 app.use((err, req, res, next) => {
   console.log(err);
