@@ -8,6 +8,7 @@ const path = require("path")
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "client", "dist")));
+app.use("/mail", require('./routes/mail.js'))
 
 mongoose
   .connect(process.env.MONGODB_URI, {
@@ -23,6 +24,8 @@ mongoose
   });
 
 // app.use("/auth", require("./models/user.js"));
+// ... other app.use middleware
+app.use(express.static(path.join(__dirname, "client", "build")))
 
 app.use((err, req, res, next) => {
   console.log(err);
