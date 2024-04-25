@@ -43,7 +43,7 @@ function Body(props) {
             className="projectCard"
             onClick={() => toLink(`https://efe-nxu9.onrender.com`)}
           >
-            <img src="/public/images/EFE.png" alt="" />
+            <img src="/images/EFE.png" alt="" />
             <h2>Essentially From Earth</h2>
           </div>
           <div
@@ -51,7 +51,7 @@ function Body(props) {
             className="projectCard"
             onClick={() => toLink(`https://efe-nxu9.onrender.com`)}
           >
-            <img src="/public/images/YHWH.png" alt="" />
+            <img src="/images/YHWH.png" alt="" />
             <h2>Understanding YHWH</h2>
           </div>
           <a href="https://efe-nxu9.onrender.com"></a>

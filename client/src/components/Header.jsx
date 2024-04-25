@@ -14,12 +14,6 @@ function Header() {
     />
   ));
 
-  function getResume(){
-  axios.get("/pdf/file")
-  .then(res => console.log(res))
-  .catch(err => console.log(err))
-}
-
   return (
     <div className="header">
       <div className="header--left">
@@ -33,7 +27,7 @@ function Header() {
             <br />
             LinkedIn
           </a>
-          <a  onClick={getResume}>
+          <a href="https://docs.google.com/document/d/e/2PACX-1vTpv9m2wxqgjveyCyJeL6CFlTIXF0HqwtdC6XzYDIepZc7EyQrJznCoc2IBNM8dFJm3HaWtcsWQ7G2u/pub">
             <GrDocumentPdf className="social--icon" />
             <br />
             Resume
