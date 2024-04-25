@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "client", "dist")));
 app.use("/mail", require('./routes/mail.js'))
+app.use("/pdf", require('./routes/pdf.js'))
 
 mongoose
   .connect(process.env.MONGODB_URI, {
@@ -36,6 +37,6 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
   });
   
-  app.listen(process.env.PORT || 9000, () => {
+  app.listen(9000, () => {
     console.log("The server is running on port 9000");
   });
