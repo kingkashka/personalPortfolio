@@ -14,14 +14,14 @@ function Body(props) {
       backImage={info.backImage}
     />
   ));
-  const projects = projectInfo.map((info) => (
-    <ProjectCard
-      title={info.title}
-      image={info.image}
-      link={info.link}
-      key={info.key}
-    />
-  ));
+  // const projects = projectInfo.map((info) => (
+  //   <ProjectCard
+  //     title={info.title}
+  //     image={info.image}
+  //     link={info.link}
+  //     key={info.key}
+  //   />
+  // ));
   function toLink(link){
     document.getElementById("projectCard").addEventListener("click", () => {
         window.location.href = link;

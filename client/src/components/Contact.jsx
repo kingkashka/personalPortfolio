@@ -21,6 +21,12 @@ function ContactForm() {
     // Perform form submission logic here
     console.log(formData);
   };
+  function toLink(link){
+    document.getElementById("projectCard").addEventListener("click", () => {
+        window.location.href = link;
+        
+    })
+}
   return (
     <div className="contact">
       <div className="left--contact">
@@ -41,7 +47,7 @@ function ContactForm() {
           <textarea type="text" name="message" placeholder="Enter your message" value={formData.message} onChange={handleFormChange} />
           </div>
           <div className="form--button">
-          <button type="submit">submit</button>
+          <button onClick={()=>toLink("https://www.linkedin.com/in/thebelovednicholaskeyes/")}>submit</button>
           </div>
         </form>
       </div>
