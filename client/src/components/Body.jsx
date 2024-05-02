@@ -54,7 +54,7 @@ function Body(props) {
             <img src="/images/YHWH.png" alt="" />
             <h2>Understanding YHWH</h2>
           </div>
-          <a href="https://efe-nxu9.onrender.com"></a>
+          <a href="https://thorah.onrender.com/language"></a>
         </div>
       </div>
     </>
