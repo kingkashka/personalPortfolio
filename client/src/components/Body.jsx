@@ -49,12 +49,12 @@ function Body(props) {
           <div
             id="projectCard"
             className="projectCard"
-            onClick={() => toLink(`https://efe-nxu9.onrender.com`)}
+            onClick={() => toLink(`https://thorah.onrender.com/language`)}
           >
             <img src="/images/YHWH.png" alt="" />
             <h2>Understanding YHWH</h2>
           </div>
-          <a href="https://thorah.onrender.com/language"></a>
+          <a href="https://efe-nxu9.onrender.com"></a>
         </div>
       </div>
     </>
